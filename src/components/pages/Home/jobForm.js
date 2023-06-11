@@ -1,14 +1,12 @@
 import React from "react";
 import { Formik, Form } from "formik";
 import FormikInput from "../../partial/FormikInput";
-import { styled } from "styled-components";
 import CustomButton from "../../partial/customButton";
 import CustomRadioButton from "../../partial/customRadio";
 import { useNavigate } from "react-router-dom";
 
-
 function JobForm() {
-  const router = useNavigate()
+  const router = useNavigate();
   return (
     <div>
       <Formik
@@ -56,13 +54,11 @@ function JobForm() {
                     <div className=" grid grid-cols-2 gap-4	">
                       <FormikInput
                         name="location"
-                        
                         placeholder="ex. Chennai"
                         label="Location"
                       />
                       <FormikInput
                         name="remoteType"
-                        
                         placeholder="ex. in-office"
                         label="Remote Type"
                       />
@@ -99,7 +95,7 @@ function JobForm() {
                       placeholder="ex. Information technology"
                       label="Industry"
                     />
-                    <div className="flex " >
+                    <div className="flex ">
                       <CustomRadioButton label={"Quick Apply"} />
                       <CustomRadioButton label={"External Apply"} />
                     </div>
@@ -122,7 +118,7 @@ function JobForm() {
                       <CustomButton
                         buttonName={"Save"}
                         type={"button"}
-                        onClick={() => router('job')}
+                        onClick={() => router("job")}
                       />
                     </div>
                   </div>

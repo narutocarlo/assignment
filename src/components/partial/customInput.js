@@ -19,8 +19,9 @@ function CustomInput({
             {label}{" "}
             <label className="text-error    ">{isRequried && "*"}</label>
           </label>
-        ):<div className="block mt-8" />
-      }
+        ) : (
+          <div className="block mt-8" />
+        )}
         <input
           className="  border  rounded w-full py-2 px-3 font leading-tight focus:outline-none  focus:shadow-outline"
           id={label}

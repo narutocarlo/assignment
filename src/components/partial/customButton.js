@@ -3,7 +3,7 @@ import React from "react";
 function CustomButton({ buttonName, variant = "contained", ...props }) {
   return (
     <div>
-      {variant == "contained" && (
+      {variant === "contained" && (
         <button
           type="submit"
           className="w-full rounded bg-primary text-white py-1.5 text-lg "
@@ -12,7 +12,7 @@ function CustomButton({ buttonName, variant = "contained", ...props }) {
           {buttonName}
         </button>
       )}
-      {variant == "outlined" && (
+      {variant === "outlined" && (
         <button
           type="submit"
           className="border border-blue-500 text-primary rounded-md px-4 py-2 transition duration-300 ease-in-out hover:bg-primary hover:text-white"
