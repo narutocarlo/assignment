@@ -3,7 +3,7 @@ import image from "../../assets/Netflix_icon.svg.png";
 import CustomButton from "./customButton";
 function JobCard({ jobData }) {
   return (
-    <div className="bg-white w-[700px]   border-[#e6e6e6] w-full rounded-lg  p-6">
+    <div className="bg-white w-[700px]   border-[#e6e6e6]  rounded-lg  p-6">
       <div className="flex  space-x-3">
         <div className="h-[60px] w-[60px] ">
           <img src={image} alt="" />
