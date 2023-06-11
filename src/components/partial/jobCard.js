@@ -6,7 +6,7 @@ function JobCard({ jobData }) {
     <div className="bg-white w-[700px]   border-[#e6e6e6] w-full rounded-lg  p-6">
       <div className="flex  space-x-3">
         <div className="h-[60px] w-[60px] ">
-          <img src={image} />
+          <img src={image} alt="" />
         </div>
         <div>
           <div class="text-xl font-bold mb-1">{jobData.jobTitle}</div>
